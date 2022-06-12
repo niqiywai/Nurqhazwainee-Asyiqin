@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> test </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  background-repeat: no-repeat;
+  background-image: url("bg9.png");  
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  max-width: 100%;
+}
+
+table {
+  border: 0;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 100%;
+  background: transparent;
+}
+
+td {
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+
+th {
+  border: 0;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: beige;
+  position: sticky;
+  position: -webkit-sticky;
+  margin-top: 0;
+  padding-right: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 5px;
+  min-width: 120px;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  display: block;
+  list-style-type: square; //or circle
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  line-height: 180%;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main right right right'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: transparent;
+  padding: 10px 20px;
+}
+
+a:link {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+</style>
+
+</head>
+
+<body bgcolor = "#E7DFD8">
+
+<div class="grid-container">
+  <div class="item1">
+    <div class="navbar" style="font-size: 20px;">
+    <a href="form.html" class="right"> FEEDBACK </a>
+    <a href="contact.html" class="right"> CONTACT </a>
+    <a href="bio.html" class="right"> ABOUT ME </a>
+    </div>
+  </div>
+  
+  <div class="item2">
+    <table>
+	<tr>
+	<td>
+	   <table>
+    <tr>
+	  <th align="center" style="font-size: 28px;"> BIO </th>
+	</tr>
+	
+	<tr>
+	  <td> 
+	  <pre style="font-size: 14px; padding: 8px;">
+  <b>NAME:</b> NURQHAZWAINEE ASYIQIN BINTI AHMAD NAZRI <br> 
+  <b>NICKNAMES:</b> QHAZ, WAINEE, ASYIQIN, WAI (MOST COMMON) <br>
+  <b>BIRTH DATE:</b> 6 MARCH 2002 <br> 
+  <b>AGE:</b> 20 YEARS OLD <br>
+  <b>PLACE OF BIRTH:</b> IPOH, PERAK <br>
+  <b>PRIMARY SCHOOL:</b> SEKOLAH KEBANGSAAN MARIAN CONVENT IPOH <br>
+  <b>HIGH SCHOOL:</b> SEKOLAH MENENGAH KEBANGSAAN RAJA PEREMPUAN <br>
+  <b>UNDERGRADUATE:</b> DIPLOMA IN SCIENCE COMPUTER <br>
+  <b>CURRENT SEMESTER:</b> 4
+	  </pre>
+	  </td>
+	</tr>
+	</table>
+	
+	<table align="left">
+	<tr>
+	  <th style="font-size: 28px;"> <center> PERSONALITIES </center> </th>
+	</tr>
+	<tr>
+	  <td style="font-size: 14px;">
+		
+		<ul> <b>MBTI:</b> ISFP-T <br> 
+		<b>CHARACTERISTICS:</b>
+		<ul> 
+		  <li> SENSITIVE TO OTHERS </li>
+		  <li> IMAGINATIVE </li>
+		  <li> PASSIONATE </li>
+		  <li> FIERCELY INDEPENDENT </li>
+		  <li> UNPREDICTABLE </li>
+		  <li> EASILY STRESSED</li>
+		</ul>
+		</ul>
+		
+	  </td>
+	</tr>
+	</table>
+	
+	<table align="right"> 
+	<tr>
+	  <th style="font-size: 28px;"> <center> STRENGTHS </center> </th>
+	</tr>
+	<tr>
+	  <td style="font-size: 14px;"> 
+	    <ul>
+		  <li> CAN BE A GOOD LEADER AND A GOOD FOLLOWER </li>
+		  <li> CAN DO TASK NEATLY WITHIN THE TIME LIMIT AND GET IT DONE CREATIVELY </li>
+		  <li> GOOD AT MEMORIZING NUMBERS AND IDENTIFY PATERNS FROM A SET OF NUMBERS </li>
+		</ul>
+	  </td>
+	</tr>
+	</table>
+	
+	<table align="left"> <br>
+	<tr>
+	  <th style="font-size: 28px;"> <center> WEAKNESSES </center> </th>
+	</tr>
+	<tr>
+	  <td style="font-size: 14px;">
+	    <ul>
+		  <li> VERY SLOW ON COMMUNICATION WITH OTHER PEOPLE ESPECIALLY THOSE I JUST MET </li>
+		  <li> CAN BE REALLY STRICT SOMETIMES </li>
+		  <li> FEEL TOO EMBARRASSED TO SPEAK IN PUBLIC </li>
+		</ul>
+	  </td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	</table>
+  </div>  
+  
+  <div class="item3"> 
+    <table>
+	  <tr>
+	    <td>
+		  <table>
+		    <tr> 
+			  <th> <u> INTEREST </u> </th>
+			</tr>
+		  </table>
+		  
+		  <table>
+			<tr> <th colspan="2"> MUSIC </th> </tr>
+			<tr>
+			  <td > pic </td>
+			  <td> 
+			    <ul>
+				  <li> FAVOURITE GENRE: KAMBING </li>
+				  <li> FAVOURITE CHANNEL: KAMBING </li>
+				  <li> MY PLAYLIST: <a href="music.html"> CHECK HERE </a> </li>
+				  <li> FAVOURITE WRITER: KAMBING </li>
+				</ul>
+			  </td>
+			</tr>
+		  </table>
+		  
+		  <table>
+		    <tr> <th colspan="2"> FOOD </th> </tr>
+			  <td > pic </td>
+			  <td> 
+			    <ul>
+				  <li> FAVOURITE FOOD: <a href="food.html"> CHECK HERE </a> </li>
+				  <li> FAVOURITE WRITER: KAMBING </li>
+				  <li> FAVOURITE WRITER: KAMBING </li>
+				  <li> FAVOURITE WRITER: KAMBING </li>
+				</ul>
+			  </td>
+			</tr>
+		  </table>
+		  
+		  <table>
+		    <tr> <th colspan="2"> POETRY </th> </tr>
+			  <td > pic </td>
+			  <td>
+			    <ul>
+				  <li> FAVOURITE POETRY: <a href="poetry.html"> CHECK HERE </a> </li>
+				  <li> FAVOURITE WRITER: KAMBING </li>
+				  <li> FAVOURITE WRITER: KAMBING </li>
+				  <li> FAVOURITE WRITER: KAMBING </li>
+				</ul>
+			  </td>
+			</tr>
+		  </table>
+		  
+		</td>
+	  </tr>
+	</table>
+  </div>
+  
+  <div class="item4"> <center> busyukk </center> </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> bio </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  background-repeat: no-repeat;
+  background-image: url("bg9.png");  
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  max-width: 100%;
+}
+
+table {
+  border: 0;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 100%;
+  background: transparent;
+}
+
+td {
+  border: 0;
+  padding: 5px 5px;
+}
+
+th {
+  border: 0;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+
+body {
+  margin: 0;
+  font-family: Serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #D8DFBE;
+  position: sticky;
+  position: -webkit-sticky;
+  margin-top: 0;
+  padding: 5px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 5px;
+  min-width: 120px;
+  font-size: 16px;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #FFF9F2;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: black;
+}
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  display: block;
+  list-style-type: square; //or circle
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  line-height: 180%;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main right right right'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.grid-container > div {
+  background-color: transparent;
+  padding: 0;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.button {
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Serif;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.buttons {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+
+.buttons:hover {
+  background-color: white;
+  color: black;
+}
+
+</style>
+
+</head>
+
+<body bgcolor = "#E7DFD8">
+
+<div class="grid-container">
+  <div class="item1">
+    <div class="navbar" style="font-size: 20px;">
+    <a href="form.html" class="right"> FEEDBACK </a>
+    <a href="bio.html" class="right"> ABOUT ME </a>
+	<a href="index.html" class="right"> HOME </a>
+    </div>
+  </div>
+  
+  <div class="item2" style="padding: 15px 20px;">
+    <table>
+	<tr>
+	<td> <hr style="height:2px; background-color: black; width: 90%;">
+	   <table style="border-right: 2px solid black; border-left: 2px solid black;">
+    <tr>
+	  <th align="center"> <u> BIO </u> </th>
+	</tr>
+	
+	<tr>
+	  <td> 
+	  <pre style="font-size: 14px; padding: 8px;"> <center>
+    <b>NAME:</b> NURQHAZWAINEE ASYIQIN BINTI AHMAD NAZRI <br> 
+    <b>NICKNAMES:</b> QHAZ, WAINEE, ASYIQIN, WAI (MOST COMMON) <br>
+    <b>BIRTH DATE:</b> 6 MARCH 2002 <br> 
+    <b>AGE:</b> 20 YEARS OLD <br>
+    <b>PLACE OF BIRTH:</b> IPOH, PERAK <br>
+    <b>PRIMARY SCHOOL:</b> SEKOLAH KEBANGSAAN MARIAN CONVENT IPOH <br>
+    <b>HIGH SCHOOL:</b> SEKOLAH MENENGAH KEBANGSAAN RAJA PEREMPUAN <br>
+    <b>UNDERGRADUATE:</b> DIPLOMA IN SCIENCE COMPUTER <br>
+    <b>CURRENT SEMESTER:</b> 4 </center>
+	  </pre>
+	  </td>
+	</tr>
+	</table> <br>
+	
+	<hr style="height:2px; background-color: black; width: 90%;">
+	
+	<table style="border-left: 2px solid black; border-right: 2px solid black;">
+	<tr>
+	  <th> <center> <u> PERSONALITIES </u> </center> </th>
+	</tr>
+	<tr>
+	  <td style="font-size: 14px;">
+		<center>
+		<ul class="text-center" style="list-style-position: inside"> <b>MBTI:</b> ISFP-T <br> 
+		<b>CHARACTERISTICS:</b>
+		<ul> 
+		  <li> SENSITIVE TO OTHERS </li>
+		  <li> IMAGINATIVE </li>
+		  <li> PASSIONATE </li>
+		  <li> FIERCELY INDEPENDENT </li>
+		  <li> UNPREDICTABLE </li>
+		  <li> EASILY STRESSED</li>
+		</ul>
+		</ul>
+		</center>
+	  </td>
+	</tr>
+	</table> <br>
+	
+	<hr style="height:2px; background-color: black; width: 90%;">
+	
+	<table style="border-right: 2px solid black; border-left: 2px solid black;"> 
+	<tr>
+	  <th> <center> <u> STRENGTHS </u> </center> </th>
+	</tr>
+	<tr>
+	  <td style="font-size: 14px;"> <center> 
+	    <ul class="text-center" style="list-style-position: inside">
+		  <li> CAN BE A GOOD LEADER AND A GOOD FOLLOWER </li>
+		  <li> CAN DO TASK NEATLY WITHIN THE TIME LIMIT AND GET IT DONE CREATIVELY </li>
+		  <li> GOOD AT MEMORIZING NUMBERS AND IDENTIFY PATERNS FROM A SET OF NUMBERS </li>
+		</ul> </center>
+	  </td>
+	</tr>
+	</table> <br>
+	
+	<hr style="height:2px; background-color: black; width: 90%;">
+	
+	<table style="border-right: 2px solid black; border-left: 2px solid black;">
+	<tr>
+	  <th> <center> <u> WEAKNESSES </u> </center> </th>
+	</tr>
+	<tr>
+	  <td style="font-size: 14px;"> <center> 
+	    <ul class="text-center" style="list-style-position: inside">
+		  <li> CAN BE REALLY STRICT SOMETIMES </li>
+		  <li> FEEL TOO EMBARRASSED TO SPEAK IN PUBLIC </li>
+		  <li> VERY SLOW ON COMMUNICATION WITH OTHER PEOPLE ESPECIALLY THOSE I JUST MET </li>
+		</ul> </center>
+	  </td>
+	</tr>
+	</table> <br>
+	
+	<hr style="height:2px; background-color: black; width: 90%;">
+	
+	</td>
+	</tr>
+	</table>
+  </div>  
+  
+  <div class="item3"> 
+    <table>
+	  <tr>
+	    <td>
+		  <table>
+		    <tr> 
+			  <th> <u> INTEREST </u> </th>
+			</tr>
+		  </table>
+		  
+		  <table> <br> <hr style="height:2px; background-color: black; width: 100%;">
+			<tr> <th colspan="2"> MUSIC </th> </tr>
+			<tr>
+			  <td> <img src ="music.jpg" style="width:250px; height:310px; border-radius: 10px;"> </td>
+			  <td> 
+			    <ul>
+				  <li> <b>  FAVOURITE GENRE: </b> LO-FI, POP, DANCE ETC </li>
+				  <li> <b> FAVOURITE CHANNEL: </b> 
+				    <ul>
+					  <li> <a href = "https://www.youtube.com/c/EricGodlowBeats/featured"> <i> ERIC GODLOW BEATS </i> </a> </li>
+					  <li> <a href = "https://www.youtube.com/channel/UCaH9AQy86DBIg-BpWzj-csQ"> <i> LEE </i> </a> </li>
+					</ul>
+                  </li>
+				  <li> <b> MY PLAYLIST: </b> <a href="music.html"> <i> CLICK HERE! </i> </a> </li>
+				</ul>
+			  </td>
+			</tr>
+		  </table>
+		  
+		  <table> <br> <hr style="height:2px; background-color: black; width: 100%;">
+		    <tr> <th colspan="2"> FOOD </th> </tr>
+			  <td> <img src ="food.jpg" style="width:250px; height:310px; border-radius: 10px;"> </td>
+			  <td> 
+			    <ul>
+				  <li> <b> FAVOURITE FOOD: </b> HOME COOKED~ </li>
+				  <li> <b> FOOD THAT I'M CRAVING: </b> BUTTERMILK CHICKEN AND MOCHI </li>
+				  <li> <b> FAVOURITE FOOD: </b> <a href="food.html"> <i> CLICK HERE! </i> </a> </a> </li>
+				</ul>
+			  </td>
+			</tr>
+		  </table>
+		  
+		  <table> <br> <hr style="height:2px; background-color: black; width: 100%;">
+		    <tr> <th colspan="2"> POETRY </th> </tr>
+			  <td> <img src ="poem.jpg" style="width:250px; height:310px; border-radius: 10px;"> </td>
+			  <td>
+			    <ul>
+				  <li> <b> FAVOURITE POEMS: </b> <a href="poetry.html"> <i> CLICK HERE! </i> </a> </li>
+				  <li> <b> REASONS I LIKE TO READ POEMS: </b> I CAN EXPRESS MY FEELINGS THROUGH 
+				  THIS AND IT MAKES ME FEEL BETTER BY READING POEMS.</li>
+				</ul>
+			  </td>
+			</tr>
+		  </table> <br> <hr style="height:2px; background-color: black; width: 100%;">
+		  
+		</td>
+	  </tr>
+	</table>
+  </div>
+  
+  <div class="item4" style="padding: 20px; font-size: 22px; background-color: #FFF9F2;"> <center> <b> <i> 
+  “I change during the course of a day I wake and
+  I'm one person, and when I go to sleep I know for certain I'm somebody else.”
+  </b> </i> </center> </div>
+</div>
+
+</body>
+</html>

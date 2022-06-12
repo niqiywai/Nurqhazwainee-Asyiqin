@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> food </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  background-image: url("bg9.png"); 
+  background-attachment: fixed;
+  max-width: 100%;
+}
+
+table {
+  border: 0;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 0;
+  padding: 10px;
+}
+
+th {
+  border: 0;
+  padding: 10px;
+  background: lightgrey;
+}
+
+body {
+  margin: 0;
+  font-family: Serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #D8DFBE;
+  position: sticky;
+  position: -webkit-sticky;
+  margin-top: 0;
+  padding-right: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 5px;
+  min-width: 120px;
+  font-size: 16px;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #FFF9F2;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Serif;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main right right right'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.grid-container > div {
+  background-color: transparent;
+  padding: 0;
+}
+
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+</style>
+
+</head>
+
+<body bgcolor = "#E7DFD8">
+
+  <div>
+	
+  </div>
+
+<div class="grid-container">
+  <div class="item1">
+    <div class="navbar">
+      <a href="form.html" class="right"> FEEDBACK </a>
+      <a href="bio.html" class="right"> ABOUT ME </a>
+	  <a href="index.html" class="right"> HOME </a>
+    </div>
+  </div>
+  
+  <div class="item2" style="padding: 15px 20px;">
+    <table> <br>
+    <tr>
+	  <td>
+	    <table align="center">
+		  <tr> <th colspan="2" align="center"> Appetizer </th> </tr>
+		  <tr>
+		  <td style="width: 80%"> <center><i><b>~ Fruit Salad ~</b></i></center> <br>
+		  Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either their own juices
+		  or a syrup. In different forms, fruit salad can be served as an appetizer, a side salad. When served as an appetizer, 
+		  a fruit salad also known as a fruit cocktail. </td>
+		  <td> <img src = "salad.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px"> </td>
+		  </tr>
+		</table>
+		
+		<table>
+		  <tr>
+		  <td> <img src = "satay.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px"> </td>
+		  <td style="width: 80%"> <center><i><b>~ Satay ~</b></i></center> <br>
+		  Satay may consist of diced or sliced chicken, goat or beef; bamboo skewers are often used, while rustic style of 
+		  preparations employ skewers from the midrib of the coconut palm frond. These are grilled or barbecued over a wood or 
+		  charcoal fire, then served with various spicy seasonings. Satay can be served in various sauces; however, most often 
+		  they are served in a combination of soy and peanut sauce. Hence, peanut sauce is often called satay sauce. </td>
+		  </tr>
+		</table>
+		<br><br>
+		<table align="center">
+		  <tr> <th colspan="2" align="center"> Main Dish </th> </tr>
+		  <tr>
+		  <td style="width: 80%"> <center><i><b>~ Chicken Rice ~</b></i></center> <br>
+		  The general term chicken rice can refer to multiple variations including roasted and fried chicken, can be served with 
+		  a variety of sauces including barbecue, and can be accompanied by a variety of side dishes including steamed rice rather 
+		  than seasoned 'oily' rice or soup. </td>
+		  <td> <img src = "chickenrice.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px;"> </td>
+		  </tr>
+		</table> 
+		
+		<table>
+		  <tr>
+		  <td> <img src = "fishnchip.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px;"> </td>
+		  <td style="width: 80%"> <center><i><b>~ Fish n Chips ~</b></i></center> <br>
+		  Fish and chips is a popular hot dish consisting of fried fish in crispy batter, served with chips. It is also served with
+		  tartar sauce with slices of lemon on the side. </td>
+		  </tr> 
+		</table>
+		  
+		<table>
+		  <tr>
+		  <td style="width: 80%"> <center><i><b>~ Spaghetti ~</b></i></center> <br>
+		  An emblem of Italian cuisine, spaghetti is frequently served with tomato sauce, which may contain various herbs (especially 
+		  oregano and basil), olive oil, meat, or vegetables. Other spaghetti preparations include amatriciana or carbonara. Grated hard 
+		  cheeses, such as Pecorino Romano, Parmesan and Grana Padano, are often sprinkled on top. </td>
+		  <td> <img src = "spaghetticarbonara.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px"> </td>
+		  </tr>
+		</table>
+		<br><br>
+		<table align="center">
+		  <tr> <th colspan="2" align="center"> Side Dish </th> </tr>
+		  <tr> 
+		  <td> <img src = "tteokbokki.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px"> </td>
+		  <td style="width: 80%"> <center><i><b>~ Tteokbokki ~</b></i></center> <br>
+		  Tteokbokki or simmered rice cake is made from small-sized cylinder-shaped rice cakes. Fish cakes, boiled eggs, and 
+		  scallions are some common ingredients paired with tteokbokki in dishes. It can be seasoned with either spicy gochujang 
+		  (chili paste) or non-spicy ganjang (soy sauce). </td>
+		  </tr>
+		</table>
+		
+		<table>
+		  <tr>
+		  <td style="width: 80%"> <center><i><b>~ Sweet Sour Fish Fillet ~</b></i></center> <br>
+		  Sweet and sour is a generic term that encompasses many styles of sauce, cuisine, and cooking methods. The dish consists
+		  of fish fillet, served with sweet and sour sauce. Sometimes it is topped with pineapple, green pepper, carrot, or sweet pickles. </td>
+		  <td> <img src = "sweetsour.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px"> </td>
+		  </tr>
+		</table>
+		
+		<table>
+		  <tr>
+		  <td> <img src = "sushi.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px"> </td>
+		  <td style="width: 80%"> <center><i><b>~ Sushi ~</b></i></center> <br>
+		  Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients, 
+		  such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice". </td>
+		  </tr>
+		</table>
+		<br><br>
+		<table align="center">
+		  <tr> <th colspan="2" align="center"> Dessert </th> </tr>
+		  <tr>
+		  <td style="width: 80%"> <center><i><b>~ Mochi ~</b></i></center> <br>
+		  Mochi is a Japanese rice cake made of mochigome, a short-grain japonica glutinous rice, and sometimes other ingredients such as water, sugar,
+		  and cornstarch. The rice is pounded into paste and molded into the desired shape. It can be filled with ice cream or any jam. </td>
+		  <td> <img src = "mochi.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px"> </td>
+		  </tr>
+		</table>
+		
+		<table>
+		  <tr>
+		  <td> <img src = "icecream.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px"> </td>
+		  <td style="width: 80%"> <center><i><b>~ Green Tea Ice Cream ~</b></i></center> <br>
+		  Green tea ice cream or matcha ice is a Japanese ice cream flavor. This flavor is popular in Japan and other parts of East Asia. </td>
+		  </tr>
+		</table>
+		
+		<table>
+		  <tr>
+		  <td style="width: 80%"> <center><i><b>~ Cream Puff ~</b></i></center> <br>
+		  A cream puff is a filled French choux pastry ball with a typically sweet and moist filling of whipped cream, custard, pastry cream, or ice cream.
+		  The puffs may be decorated or left plain or garnished with chocolate sauce, caramel, or a dusting of powdered sugar. Savory profiteroles are also made, 
+		  filled with pureed meats, cheese, and so on. </td>
+		  <td> <img src = "creampuff.jpg" width="200" height="200" style="vertical-align:middle; margin:10px 10px"> </td>
+		  </tr>
+		</table>
+		
+	  </td>
+	</tr>
+  </table>
+  </div>
+  
+  <div class="item3" style="padding: 20px; font-size: 22px; background-color: #FFF9F2;"> <center> <i> <b> 
+  “Food is symbolic of love when words are inadequate.”
+  </b> </i> </center> </div>  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> form </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  background-repeat: no-repeat;
+  background-image: url("bg9.png");  
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  max-width: 100%;
+}
+
+table {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  position: center;
+  padding: 10px 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  border: none;
+}
+
+body {
+  margin: 0;
+  font-family: Serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #D8DFBE;
+  position: sticky;
+  position: -webkit-sticky;
+  margin-top: 0;
+  padding-right: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 5px;
+  min-width: 120px;
+  font-size: 16px;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #FFF9F2;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.grid-container > div {
+  background-color: transparent;
+  padding: 0;
+}
+
+</style>
+
+<script>
+function validateForm() {
+  let x = document.forms["myform"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+</head>
+
+<body bgcolor = "#E7DFD8">
+
+<div class="grid-container">
+  <div class="item1">
+    <div class="navbar">
+      <a href="form.html" class="right"> FEEDBACK </a>
+      <a href="bio.html" class="right"> ABOUT ME </a>
+	  <a href="index.html" class="right"> HOME </a>
+    </div>
+  </div>
+  
+  <div class="item2" style="padding: 15px 20px;">
+    <h1> <center> Feedbacks on My Website </center> </h1>
+	<form name="myform" method="post" action="form.php" onsubmit="return validateForm()">
+
+    <table style="width:55%">
+      <tr>
+        <td> <br>
+	    <b> Name: </b>
+        <input type = 'text' name = 'name' size = '30' style = 'color:grey' 	
+	    onblur="this.value = this.value || this.defaultValue; 	this.style.color 	= 	'#000000'" 
+	    onfocus="this.value=''; 	this.style.color = '#000'" value = 'Enter your name'>
+
+        <p> <b> Age: </b>
+	    <select name='age'>
+		  <option> Choose your age
+		  <option value='1'> Below 17 years old
+		  <option value='2'> 18-27 years old
+		  <option value='3'> 28-37 years old
+		  <option value='4'> Above 38 years old
+	    </select>
+
+        <p> <b> Gender: </b>
+	    <input type='radio' name='gender' value='male'> Male
+	    <input type='radio' name='gender' value='female'> Female
+	    <input type='radio' name='gender' value='none'> Prefer not to say
+
+        <p> <b> How did you get my website's link: </b>
+	    <select name='link'>
+		  <option> from
+		  <option value='1'> Friend
+		  <option value='2'> Lecturer
+		  <option value='3'> Online
+	    </select>
+	
+        <p> <b> Which part(s) should I improve: </b>
+        <input type='checkbox' name='back'> Background
+	    <input type='checkbox' name='au'> Audio
+	    <input type='checkbox' name='co'> Color
+	
+	
+	    <p> <b> Feedbacks: </b> <br>
+	    <textarea name='feedback' rows='10' cols='40' style='color: grey' 	
+	    onblur="this.value = this.value || this.defaultValue; this.style.color='#000000'" 
+	    onfocus="this.value=''; this.style.color='#000'" > You may write anything you want </textarea>
+	
+	    <p> <input type='reset' name='reset' value='Reset'>
+	    <input type='submit' name='submit' value='Submit'> </p>
+	    </td>
+      </tr> 
+    </table>
+    </form>   
+
+    <br> <h3><center><i>Thank you for your submission!</i></center></h3><br>
+    </div>  
+	
+  <div class="item3" style="padding: 20px; font-size: 22px; background-color: #FFF9F2;"> <center> <i> <b> 
+  “If you cannot do great things, do small
+  things in a great way.” </b> </i> </center> </div>
+</div>
+
+</body>
+</html>
